@@ -44,8 +44,8 @@ export function Hero() {
             </div>
 
             <p className="max-w-[600px] text-zinc-400 md:text-xl/relaxed italic border-l-4 border-cyan-500/50 pl-6 py-2">
-              "Building diverse and robust systems for the future of
-              connectivity."
+              “Life is like riding a bicycle. To keep your balance, you must
+              keep moving.” - Albert Einstein
             </p>
 
             <div className="flex flex-col gap-4 min-[400px]:flex-row pt-8">

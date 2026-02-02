@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Code, Database, Server, Smartphone } from "lucide-react"
+import { motion } from "framer-motion";
+import { Code, Database, Server, Smartphone } from "lucide-react";
 
 export function About() {
   return (
@@ -19,10 +19,15 @@ export function About() {
             className="space-y-4 max-w-[800px] mx-auto"
           >
             <p className="text-zinc-400 md:text-lg/relaxed">
-              I am a results-driven Integration Engineer with a strong background in Telecommunications and Cloud Infrastructure. My expertise lies in orchestrating complex systems, ensuring seamless CI/CD pipelines, and optimizing network performance.
+              I am a results-driven Integration Engineer with a strong
+              background in Telecommunications and Cloud Infrastructure. My
+              expertise lies in orchestrating complex systems, ensuring seamless
+              CI/CD pipelines, and optimizing network performance.
             </p>
             <p className="text-zinc-400 md:text-lg/relaxed">
-              With deep knowledge of 5G Core, Packet Core, and Virtualization technologies, I bridge the gap between development and operations to deliver robust, scalable solutions.
+              With deep knowledge of 5G Core, Packet Core, and Virtualization
+              technologies, I bridge the gap between development and operations
+              to deliver robust, scalable solutions.
             </p>
           </motion.div>
         </div>
@@ -36,26 +41,38 @@ export function About() {
         >
           <div className="flex flex-col items-center justify-center space-y-2 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm shadow-xl transition-all hover:bg-white/10 hover:border-cyan-500/30 group">
             <Server className="h-10 w-10 text-cyan-400 group-hover:scale-110 transition-transform drop-shadow-[0_0_8px_rgba(34,211,238,0.5)]" />
-            <h3 className="text-sm font-bold tracking-wide text-white">Telecom Core</h3>
-            <p className="text-xs text-zinc-400 text-center">5G, EPC, IMS</p>
+            <h3 className="text-sm font-bold tracking-wide text-white">
+              Telecom Core
+            </h3>
+            <p className="text-xs text-zinc-400 text-center">ENM, ENIQ</p>
           </div>
           <div className="flex flex-col items-center justify-center space-y-2 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm shadow-xl transition-all hover:bg-white/10 hover:border-cyan-500/30 group">
             <Database className="h-10 w-10 text-cyan-400 group-hover:scale-110 transition-transform drop-shadow-[0_0_8px_rgba(34,211,238,0.5)]" />
-            <h3 className="text-sm font-bold tracking-wide text-white">Cloud Infra</h3>
+            <h3 className="text-sm font-bold tracking-wide text-white">
+              Cloud Infra
+            </h3>
             <p className="text-xs text-zinc-400 text-center">OpenStack, K8s</p>
           </div>
           <div className="flex flex-col items-center justify-center space-y-2 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm shadow-xl transition-all hover:bg-white/10 hover:border-cyan-500/30 group">
             <Code className="h-10 w-10 text-cyan-400 group-hover:scale-110 transition-transform drop-shadow-[0_0_8px_rgba(34,211,238,0.5)]" />
-            <h3 className="text-sm font-bold tracking-wide text-white">Automation</h3>
-            <p className="text-xs text-zinc-400 text-center">Python, Bash, Ansible</p>
+            <h3 className="text-sm font-bold tracking-wide text-white">
+              Automation
+            </h3>
+            <p className="text-xs text-zinc-400 text-center">
+              Python, Bash, Ansible
+            </p>
           </div>
           <div className="flex flex-col items-center justify-center space-y-2 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm shadow-xl transition-all hover:bg-white/10 hover:border-cyan-500/30 group">
             <Smartphone className="h-10 w-10 text-cyan-400 group-hover:scale-110 transition-transform drop-shadow-[0_0_8px_rgba(34,211,238,0.5)]" />
-            <h3 className="text-sm font-bold tracking-wide text-white">Testing</h3>
-            <p className="text-xs text-zinc-400 text-center">E2E, Integration</p>
+            <h3 className="text-sm font-bold tracking-wide text-white">
+              Testing
+            </h3>
+            <p className="text-xs text-zinc-400 text-center">
+              E2E, Integration
+            </p>
           </div>
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
