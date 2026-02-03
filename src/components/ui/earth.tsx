@@ -103,7 +103,7 @@ function TerminalText({ onComplete }: { onComplete: () => void }) {
 
   return (
     <div
-      className="absolute inset-0 flex items-center justify-center z-20"
+      className="absolute inset-0 hidden sm:flex items-center justify-center z-20"
       style={{ marginLeft: "-30%" }}
     >
       <motion.div
@@ -278,7 +278,7 @@ function StatsDisplay() {
 
   return (
     <motion.div
-      className="absolute top-[15%] right-[5%] font-mono text-xs space-y-3 z-10"
+      className="absolute bottom-[5%] right-[20%] sm:bottom-[8%] sm:right-[22%] md:bottom-[10%] md:right-[38%] font-mono text-xs sm:text-sm md:text-base space-y-1 sm:space-y-2 md:space-y-3 z-10"
       initial={{ opacity: 0, x: 50 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 1, duration: 0.8 }}
@@ -360,7 +360,7 @@ function GridBackground() {
 // Hexagon decorations
 function HexDecorations() {
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+    <div className="absolute inset-0 overflow-hidden pointer-events-none hidden sm:block">
       {[...Array(6)].map((_, i) => (
         <motion.div
           key={i}
@@ -405,7 +405,7 @@ export function EarthCanvas() {
       <GridBackground />
       <HexDecorations />
       <NetworkTopology />
-      <TerminalText onComplete={() => setSystemReady(true)} />
+      {/* <TerminalText onComplete={() => setSystemReady(true)} /> */}
       <StatsDisplay />
 
       {/* Data streams - only appear after system ready */}
